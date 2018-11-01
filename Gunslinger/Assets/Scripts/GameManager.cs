@@ -121,10 +121,12 @@ public class GameManager : MonoBehaviour {
                 scoreOne = scoreTwo = 0;
                 playerOneScore++;
                 scoreOneText.text = "" + playerOneScore;
+                NextRoundBtn.SetActive(false);
                 gameModePanel.SetActive(true);
 
                 //reenable gamemode panel ONLY when game ends
                 //to prevent from gamemode change during active game session
+                NextRoundBtn.SetActive(false);
                 gameModePanel.SetActive(true);
 
             }
